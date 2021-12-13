@@ -5,3 +5,4 @@
 ## [Singleton](./src/com/sherlock/designpattern/singleton/README.md)
 ## [Factory](./src/com/sherlock/designpattern/factory/README.md)
 ## [Builder](./src/com/sherlock/designpattern/builder/README.md)
+## [Prototype](./src/com/sherlock/designpattern/prototype/README.md)
