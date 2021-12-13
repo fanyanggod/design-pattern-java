@@ -4,3 +4,4 @@
 > One more thing to do.
 ## [Singleton](./src/com/sherlock/designpattern/singleton/README.md)
 ## [Factory](./src/com/sherlock/designpattern/factory/README.md)
+## [Builder](./src/com/sherlock/designpattern/builder/README.md)
