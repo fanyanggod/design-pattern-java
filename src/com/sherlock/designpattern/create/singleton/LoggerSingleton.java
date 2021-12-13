@@ -1,4 +1,4 @@
-package com.sherlock.designpattern.singleton;
+package com.sherlock.designpattern.create.singleton;
 
 import java.io.File;
 import java.io.FileWriter;

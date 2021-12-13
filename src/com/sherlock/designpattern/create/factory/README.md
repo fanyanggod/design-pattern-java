@@ -2,10 +2,10 @@
 ## Simple Factory
 在一个类中如果在完成对象创建时，该过程具有一定程度的复杂性或工作量，
 可以将该功能的代码块剥离到一个独立类中。该类只负责对象的创建，即简单工厂模式类。
-[SimpleFactory](./SimpleFactory.java)
+[SimpleFactory](SimpleFactory.java)
 ## Factory Method
 再简单工厂的基础上，借助多态的性质，对代码进行重构，解决大量的if-else。
-代码示例：[FactoryMethod](./FactoryMethodFactory.java)
+代码示例：[FactoryMethod](FactoryMethodFactory.java)
 
 工厂方法相较于简单工厂来说，更符合开闭原则。但是会新增很多Factory类，且用途只是用来创建对象。
 因此在实际使用过程中，需要根据应用场景进行选择。

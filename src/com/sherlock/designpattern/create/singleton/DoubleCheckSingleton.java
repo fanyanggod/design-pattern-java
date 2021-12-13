@@ -1,4 +1,4 @@
-package com.sherlock.designpattern.singleton;
+package com.sherlock.designpattern.create.singleton;
 
 /**
  * @author sherlock

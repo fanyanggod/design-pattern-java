@@ -10,7 +10,7 @@
 | minIdle  | 最小空闲资源数量  | 否    | 1    |
 
 ### 通过构造函数创建
-代码示例：[ResourcePoolConfig](./ResourcePoolConfig.java),
+代码示例：[ResourcePoolConfig](ResourcePoolConfig.java),
 创建示例：
 ```java
  ResourcePoolConfig config = new ResourcePoolConfig(name,8,8,1)
@@ -19,7 +19,7 @@
 这个方法有着很明显的不足，即如果参数过多，在代码的可读性和易用性上变得很差。
 且无法没有对参数之间进行校验。
 ### 通过Set创建
-代码示例：[ResourcePoolConfig](./ResourcePoolConfig2.java),
+代码示例：[ResourcePoolConfig](ResourcePoolConfig2.java),
 创建示例：
 ```java
   ResourceConfig config = new ResourceConfig(name);
@@ -29,8 +29,8 @@
 ```
 通过set()来解决构造函数参数过多所带来的问题，但是同样无法解决参数之间校验的问题。
 ### 通过Builder创建
-代码示例：[ResourcePoolConfig](./ResourcePoolConfig3.java),
-[Builder](./Builder.java)
+代码示例：[ResourcePoolConfig](ResourcePoolConfig3.java),
+[Builder](Builder.java)
 创建示例：
 ```java
    ResourcePoolConfig config = new ResourcePoolConfig.Builder()

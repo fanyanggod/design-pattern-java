@@ -1,4 +1,4 @@
-package com.sherlock.designpattern.builder;
+package com.sherlock.designpattern.create.builder;
 
 /**
  * @author sherlock

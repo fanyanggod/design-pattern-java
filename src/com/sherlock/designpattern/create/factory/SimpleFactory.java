@@ -1,4 +1,4 @@
-package com.sherlock.designpattern.factory;
+package com.sherlock.designpattern.create.factory;
 
 /**
  * @author sherlock
