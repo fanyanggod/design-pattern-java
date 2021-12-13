@@ -8,9 +8,11 @@ import java.io.IOException;
  * @author sherlock
  * @date 2021/12/10
  */
-public class LoggerUnSafe {
+public class LoggerSingleton {
     public static class Logger {
         private  FileWriter writer;
+        private static final Logger instance = new Logger();
+
         public Logger(){
             File file = new File("log file path");
             try {
@@ -18,6 +20,10 @@ public class LoggerUnSafe {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+        }
+
+        public static Logger getInstance(){
+            return instance;
         }
 
         public void log(String message) {
@@ -29,18 +35,16 @@ public class LoggerUnSafe {
         }
     }
     public static class UserController{
-        private final Logger logger = new Logger();
 
         public void create() {
-            logger.log("create user");
+            Logger.getInstance().log("create user");
         }
     }
 
     public static class OrderController{
-        private final Logger logger = new Logger();
 
         public void create() {
-            logger.log("create Order");
+            Logger.getInstance().log("create user");
         }
     }
 }

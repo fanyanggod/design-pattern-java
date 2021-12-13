@@ -8,7 +8,7 @@ import java.io.IOException;
  * @author sherlock
  * @date 2021/12/10
  */
-public class Test {
+public class LoggerUnSafe {
     public static class Logger {
         private  FileWriter writer;
         public Logger(){

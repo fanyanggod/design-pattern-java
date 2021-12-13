@@ -8,7 +8,7 @@ import java.io.IOException;
  * @author sherlock
  * @date 2021/12/10
  */
-public class LoggerUnSafe {
+public class LoggerSafe {
     public static class Logger {
         private  FileWriter writer;
         public Logger(){
@@ -20,11 +20,13 @@ public class LoggerUnSafe {
             }
         }
 
-        public void log(String message) {
-            try {
-                writer.write(message);
-            } catch (IOException e) {
-                e.printStackTrace();
+        public  void log(String message) {
+            synchronized (Logger.class) {
+                try {
+                    writer.write(message);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         }
     }
@@ -42,5 +44,6 @@ public class LoggerUnSafe {
         public void create() {
             logger.log("create Order");
         }
+
     }
 }
